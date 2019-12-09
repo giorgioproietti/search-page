@@ -1,0 +1,82 @@
+/* ************************ */
+/* SIDEBAR                  */
+/* ************************ */
+
+.sidebar {
+  /*width: calc(100% - 83vw);*/
+  margin-left: 70px;
+  min-height: 80vh;
+}
+
+/* SIDEBAR SECTIONS            */
+
+.sidebar_header, .sidebar_header .mat-toolbar {
+  background-color:white;
+  width:100%;
+}
+
+.sidebar_main_container {
+  height:100%;
+  width:100%;
+  padding-left: 50px
+}
+
+.sidebar_content{
+  height:100%;
+  width:100%;
+  padding: 0 16px;
+}
+
+.sidebar_sub_content {
+  padding-left:32px;
+}
+
+/* SIDEBAR ELEMENTS            */
+
+.sidebar_header .button_container {
+   position:absolute;
+   right:0;
+}
+.sidebar-btn .mat-icon-button {
+   width:20px;
+   height:20px;
+}
+
+.sidebar_btn.mat-icon-button.mat-mini-fab {
+    height: 28px;
+    width: 28px;
+    line-height: 12px;
+    padding: 0;
+}
+
+.button_container .mat-icon-button .mat-icon, .mat-icon-button i {
+    line-height: 10px;
+}
+
+.sidebar .mat-toolbar-row{
+  height:30px;
+}
+
+.tp-container {
+   min-width: 60px;
+   min-height:100vh;
+   height:100%;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left:0;
+   right: 0;
+}
+
+.no-v-scroll {
+  height: 100%;
+  overflow-y: hidden; 
+  display: flex; 
+  flex-direction: column;
+}
+
+/* FILTER & CHIPS              */
+
+.mat-drawer-container, .mat-drawer-inner-container { 
+  overflow: visible !important; 
+  }

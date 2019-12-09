@@ -1,0 +1,23 @@
+<app-vertical-navbar [sidenav]="leftSidenav"></app-vertical-navbar>
+
+<mat-sidenav-container class="tp_container">
+
+	<mat-sidenav #leftSidenav mode="side" opened class="no-v-scroll mat-elevation-z10" style="overflow:visible">
+		<app-left-menu></app-left-menu>
+	</mat-sidenav>
+
+	<mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
+			<app-navbar></app-navbar>
+
+			<div fxLayout="row" gdAlignRows="stretch">
+				<app-search-bar></app-search-bar>
+			</div>
+
+			<section class="search_content mt-4">
+				<div fxLayout="row" fxLayoutAlign="start none">
+					<app-search-content></app-search-content>
+				</div>
+			</section>
+	</mat-sidenav-content>
+
+</mat-sidenav-container>

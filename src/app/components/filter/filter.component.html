@@ -1,0 +1,29 @@
+<h3>Filter</h3>
+
+ <!-- Filter list row -->
+
+<div>
+  <div class="sidebar_filter_list pb-4" fxLayout="column" fxLayoutAlign="space-between none" >
+    <mat-chip-list [(ngModel)]="selectedFilters" multiple class="filter_chips mat-chip-list-stacked">
+      <mat-chip *ngFor="let filter of filters" selectable="true" [selected]="isSelected(filter)" (click)="toggleFilter(filter)">
+        <mat-icon>{{isSelected(filter) ? "check" : ""}} </mat-icon>
+        {{filter.name}}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+ <!-- Input row -->
+
+  <div class="sidebar_filter_form mt-4" fxLayout="column" fxLayoutAlign="start start">
+      <mat-form-field>
+        <input matInput placeholder="By Project">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Author">
+      </mat-form-field>
+
+    <div fxLayout="row" class="pt-4">
+    <button mat-button><mat-icon>close</mat-icon>Clear filter</button>
+    <button mat-button color="primary"><mat-icon>save</mat-icon>Save filter</button>
+    <div>
+  </div>
+</div>

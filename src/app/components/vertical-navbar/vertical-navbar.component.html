@@ -1,0 +1,29 @@
+<div class="vertical_nav" color="primary">
+      <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="center">
+        
+      <mat-nav-list fxLayout="column" fxLayoutAlign="start center">
+         <a mat-list-item title="Close or open sidebar" (click)="sidenav.toggle();">
+              <mat-icon>menu</mat-icon>
+            </a>
+          <a mat-list-item title="Go back home"> <mat-icon>home</mat-icon> </a>
+          <a mat-list-item title="Go to Searech Section"> <mat-icon>search</mat-icon> </a>
+          <a mat-list-item title="Go to Catalog Section"> <mat-icon>extension</mat-icon></a>
+
+        <div class="user_nav" >
+          <a mat-list-item> <mat-icon>info</mat-icon> </a>
+          <a mat-list-item> <mat-icon>apps</mat-icon> </a>
+          <mat-list-item>
+            <a [matMenuTriggerFor]="userMenu">
+              <mat-icon>account_circle</mat-icon>
+            </a>
+          </mat-list-item>
+        </div>
+      </mat-nav-list>
+  </mat-toolbar>
+</div>
+
+<mat-menu #userMenu="matMenu">
+  <button mat-menu-item><mat-icon>person</mat-icon>Settings</button>
+  <button mat-menu-item><mat-icon>info</mat-icon>Help</button>
+  <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Log Out</button>
+</mat-menu>

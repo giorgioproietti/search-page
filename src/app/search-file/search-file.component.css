@@ -1,0 +1,30 @@
+.single_result_title a {
+  font-size: 1.5em;
+}
+.mat-button-toggle-appearance-standard ,.mat-button-toggle-group-appearance-standard{
+  background:transparent;
+  border:none;
+}
+.mat-button-toggle-group-appearance-standard .mat-button-toggle + .mat-button-toggle {
+  border:none;
+  background-color:#0c8caa;
+  color:white;
+}
+.first_btn {
+  background-color:#294aa8;
+  border-radius:4px;
+  margin-right:8px;
+  color:white;
+}
+menu_btn_secondary {
+  background:#aaa;
+  border-radius:4px;
+}
+menu_btn_secondary .material-icons {
+  font-size:16px;
+}
+
+.tag_list .mat-list-item-content .mat-list-item-ripple {
+  font-size:10px;
+  color: #aaa;
+}

@@ -1,0 +1,37 @@
+.vertical_nav {
+  width: 54px !important;
+  height:100%;
+  position:fixed;
+  left:0;
+  z-index:10;
+  background-color: #0c8caa;
+  overflow:hidden;
+}
+.mat-nav-list.mat-list-base {
+    padding-top: 1px;
+}
+.vertical_nav .mat-list-base .mat-list-item{
+height:54px;
+}
+
+.vertical_nav .mat-list-base .mat-list-item .material-icons{
+font-size:24px;
+color:white;
+
+}
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 13px;
+    position: relative;
+    height: inherit;
+}
+.mat-list-option:hover, .mat-list-option:focus, .mat-nav-list .mat-list-item:hover, .mat-nav-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-action-list .mat-list-item:focus {
+    background: rgba(0, 0, 0, 0.16);
+}
+.user_nav {
+  position:absolute;
+  bottom:0;
+}

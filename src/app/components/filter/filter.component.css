@@ -1,0 +1,11 @@
+.mat-standard-chip {
+  text-align: left;
+  max-width:150px;
+}
+.mat-chip {
+    font-size: 12px;
+    font-weight: 300;
+}
+.mat-icon.notranslate.material-icons.mat-icon-no-color {
+    font-size: 20px;
+}

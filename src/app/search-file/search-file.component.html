@@ -1,0 +1,44 @@
+<mat-toolbar>
+	<mat-toolbar-row>
+    <div fxFlex="10" fxLayoutAlign="start center">
+	  	<button mat-icon-button class="mr-4">
+          <mat-icon>fullscreen</mat-icon>
+        </button>
+    </div>
+        <span></span>
+  <div fxFlex="90" fxLayoutAlign="end center" class="file_menu" >
+        <mat-button-toggle-group #group="matButtonToggleGroup" class="mat-elevation-z10">
+          <mat-button-toggle class="first_btn" color="primary" value="left" aria-label="Text align left">
+            <mat-icon>book</mat-icon>
+          </mat-button-toggle>
+          
+            <mat-button-toggle value="left" aria-label="Text align left">
+              <mat-icon>save_alt</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="center" aria-label="Text align center">
+              <mat-icon>launch</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="right" aria-label="Text align right">
+              <mat-icon>bookmark_border</mat-icon>
+            </mat-button-toggle>
+          
+        </mat-button-toggle-group>
+</div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+				<mat-card>
+          <mat-card-title-group>
+          <mat-card-title>
+          <h2>Article data title</h2>
+          </mat-card-title>
+          <mat-card-subtitle>tag</mat-card-subtitle>
+
+          </mat-card-title-group>
+          <mat-card-content fxLayout="column">
+              <p>Material icons are delightful, beautifully crafted symbols for common actions and items. Download on desktop to use them in your digital products for Android, iOS, and web.</p>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+              <p>
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            
+        </mat-card-content>
+		  </mat-card>

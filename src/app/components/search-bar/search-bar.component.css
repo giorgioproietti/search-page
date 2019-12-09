@@ -1,0 +1,34 @@
+search_result h2 {
+  font-size:18px;
+  font-weight:400;
+}
+
+.search_result mat-list-item{
+  display: inline;
+  color: #202020;
+  font-size:.9em;
+}
+
+.mat-nav-list .mat-nav-list-item-content {
+  display:inline;
+}
+
+#search mat-form-field {
+  position:relative;
+  left: 10%;
+  right:10%;
+  width:80%;
+  padding:1em 0;
+}
+
+#search .placeholder{
+    font-size: 20px;
+}
+
+::ng-deep .mat-form-field-underline{
+  background-color:red;
+}
+
+#search .material-icons{
+  font-size: 32px;
+}

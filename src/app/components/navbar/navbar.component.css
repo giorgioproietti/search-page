@@ -1,0 +1,12 @@
+.right-content {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.logo .mat-toolbar h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:600;
+  font-size: 16px;
+}
+

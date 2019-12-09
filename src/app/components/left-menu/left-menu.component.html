@@ -1,0 +1,30 @@
+<div fxLayout="row" fxLayoutGap="20" class="sidebar_main_container" >
+  <div [@onSideNavChange]="sideNavState ? 'open' : 'close'">
+  
+  <div fxLayout="column" fxLayoutAlign="start center">
+
+      <div fxFlex class="sidebar_content">
+        <div class="sidebar_header" fxLayout="row" fxLayoutAlign="start center">
+          <mat-toolbar fxFlex="80" fxLayoutAlign="start center">
+            <mat-toolbar-row><p>Navigation Sidebar</p></mat-toolbar-row>
+          </mat-toolbar>
+
+          <div class="button_container" fxFlex="20" fxLayoutAlign="end center" style="position:absolute !important;right:-15px;">
+           <button mat-mini-fab mat-icon-button (click)="onSinenavToggle();" class="sidebar_btn">
+              <mat-icon *ngIf="sideNavState">keyboard_arrow_left</mat-icon>
+              <mat-icon *ngIf="!sideNavState">keyboard_arrow_right</mat-icon>
+            </button>
+          </div>
+        </div>
+        
+        <mat-divider></mat-divider>
+
+        <div class="sidebar_sub_content">
+          <app-filter></app-filter>
+        </div>
+      </div>
+
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,78 @@
+/* ************************ */
+/* GENERAL                 */
+/* ************************ */
+
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: white;
+}
+
+.sub_content {
+  padding:16px;
+}
+
+.mat-card {
+  border-radius:0 !important;
+}
+
+.mat-card-header-text  {
+  margin:0;
+}
+
+.content mat-card {
+  height:100vh;
+  overflow: auto;
+}
+
+.icon_col .material-icons {
+  font-size:32px;
+}
+
+/* ************************ */
+/* Vertical Navbar          */
+/* ************************ */
+
+
+/* ************************ */
+/* NAVBAR                   */
+/* ************************ */
+
+
+/* ************************ */
+/* SIDEBAR                  */
+/* ************************ */
+.mat-drawer-container {
+  height:100vh;
+}
+
+
+/* ************************ */
+/* SEARCH BAR               */
+/* ************************ */
+
+/* ************************ */
+/* SEARCH CONTENT           */
+/* ************************ */
+.search_content {
+  height:100%;
+}
+
+
+/* ************************ */
+/* Utility                  */
+/* ************************ */
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.main_content {
+  width: 100%;
+}
+
+.sub-content {
+  height: 100%;
+  background-color: white;
+}
