@@ -8,7 +8,6 @@ export const onSideNavChange = trigger('onSideNavChange', [
       'top':'0',
       'right':'50%',
       'width': '30px',
-      
     }
     
     )
@@ -26,13 +25,14 @@ export const onSideNavChange = trigger('onSideNavChange', [
 export const onMainContentChange = trigger('onMainContentChange', [
   state('close',
     style({
-      'margin-left': '54px'
+      'margin-left': '10px'
       
     })
   ),
   state('open',
     style({
-      'margin-left': '300px'
+      'position':'relative',
+      'margin-left': '300px',
     })
   ),
   transition('close => open', animate('250ms ease-in')),

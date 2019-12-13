@@ -6,18 +6,20 @@
 		<app-left-menu></app-left-menu>
 	</mat-sidenav>
 
-	<mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
-			<app-navbar></app-navbar>
+	<mat-sidenav-content fxLayout="column" [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
+      <div>
+        <app-navbar fxFlex="100"></app-navbar>
+      </div>
+      <div>
+        <app-search-bar fxFlex="100"></app-search-bar>
+      </div>
 
-			<div fxLayout="row" gdAlignRows="stretch">
-				<app-search-bar></app-search-bar>
-			</div>
-
-			<section class="search_content mt-4">
+			<div fxFlex="100" class="search_content mt-4">
 				<div fxLayout="row" fxLayoutAlign="start none">
 					<app-search-content></app-search-content>
 				</div>
-			</section>
+			</div>
+
 	</mat-sidenav-content>
 
 </mat-sidenav-container>
